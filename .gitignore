@@ -1,0 +1,10 @@
+# Local visual-review screenshots
+_*.png
+
+# Local development helpers
+check-preview.py
+make-hero-video.py
+
+# System files
+.DS_Store
+Thumbs.db

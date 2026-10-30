@@ -1,0 +1,341 @@
+/* Home-only V2 renewal. All copy, links, catalog data, and brand fonts stay in index.html. */
+#iym-site:not(.inner-page) {
+  --renew-ink:#272727;
+  --renew-pink:#fecff6;
+  --renew-pale:#feeffb;
+  --renew-brown:#8b572a;
+  --renew-green:#4e7661;
+  background:#fffdfd;
+}
+#iym-site:not(.inner-page)::before {display:none;content:none}
+#iym-site:not(.inner-page) .site-header {position:fixed;z-index:100;top:0;left:0;right:0;transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease}
+#iym-site:not(.inner-page) .partners,#iym-site:not(.inner-page) .intro,#iym-site:not(.inner-page) .program-paths,#iym-site:not(.inner-page) .workshops,#iym-site:not(.inner-page) .student-voices,#iym-site:not(.inner-page) .approach,#iym-site:not(.inner-page) .faq {width:100%}
+#iym-site:not(.inner-page) .section-frame {margin:0;border-radius:0}
+#iym-site:not(.inner-page) .site-header {min-height:82px;padding-inline:clamp(26px,3.5vw,56px);border-bottom:0}
+#iym-site:not(.inner-page) .site-header .brand {padding:4px 8px;border-radius:8px;background:rgba(255,253,253,.94)}
+#iym-site:not(.inner-page) .site-header .brand img {width:132px}
+#iym-site:not(.inner-page) .site-header .main-nav {gap:clamp(14px,1.5vw,24px)}
+#iym-site:not(.inner-page) .site-header .main-nav a,#iym-site:not(.inner-page) .site-header .nav-shop-trigger {color:#fff!important;text-shadow:0 1px 9px rgba(0,0,0,.3)}
+#iym-site:not(.inner-page) .site-header .nav-shop-trigger .nav-chevron {border-color:white}
+#iym-site:not(.inner-page) .site-header .header-cta {background:var(--renew-pink);color:var(--renew-ink);text-shadow:none}
+#iym-site:not(.inner-page) .site-header.is-scrolled {background:rgba(255,253,253,.97);border-bottom:1px solid #ded5dc;box-shadow:0 8px 22px rgba(39,39,39,.08);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+#iym-site:not(.inner-page) .site-header.is-scrolled .main-nav a,#iym-site:not(.inner-page) .site-header.is-scrolled .nav-shop-trigger,#iym-site:not(.inner-page) .site-header.is-scrolled .shop-toggle {color:#272727!important;text-shadow:none}
+#iym-site:not(.inner-page) .site-header.is-scrolled :is(.nav-shop-trigger,.shop-toggle) .nav-chevron {border-color:#272727}
+#iym-site:not(.inner-page) .site-header.is-scrolled .menu-toggle {color:#272727;text-shadow:none}
+#iym-site:not(.inner-page) .site-header.is-scrolled .menu-toggle img {filter:none}
+
+/* Images fade through the dark surface, so faces never dissolve into each other. */
+#iym-site:not(.inner-page) .v2-hero {min-height:710px;background:var(--renew-ink)}
+#iym-site:not(.inner-page) .v2-hero-media {background:#272727}
+#iym-site:not(.inner-page) .v2-hero-media img {display:block;width:100%;height:100%;object-fit:cover;object-position:center 47%;opacity:1;transition:opacity .65s ease;animation:v2-portrait-drift 24s ease-in-out infinite;will-change:transform,opacity}
+#iym-site:not(.inner-page) .v2-hero-media.is-dimming img {opacity:0}
+@keyframes v2-portrait-drift {0%,100% {transform:scale(1.02) translateY(0)} 50% {transform:scale(1.065) translateY(-.4%)}}
+#iym-site.v2-motion-paused .v2-hero-media img {animation-play-state:paused}
+#iym-site:not(.inner-page) .v2-hero-scrim {background:linear-gradient(90deg,rgba(25,24,23,.86) 0%,rgba(25,24,23,.72) 34%,rgba(25,24,23,.46) 62%,rgba(25,24,23,.42) 100%),linear-gradient(180deg,rgba(18,22,20,.32) 0%,transparent 24%,transparent 65%,rgba(18,22,20,.4) 100%)}
+#iym-site:not(.inner-page) .v2-hero-inner {max-width:1500px;min-height:710px;grid-template-columns:minmax(0,1.18fr) minmax(370px,.82fr);gap:clamp(38px,4vw,65px);padding:142px clamp(40px,6.5vw,100px) 95px}
+#iym-site:not(.inner-page) .v2-hero .hero-copy {max-width:none}
+#iym-site:not(.inner-page) .v2-hero h1 {max-width:20ch;font-size:clamp(44px,4.15vw,63px);font-weight:500;line-height:1.09;letter-spacing:-.055em}
+#iym-site:not(.inner-page) .v2-hero h1 span {color:var(--renew-pink)}
+#iym-site:not(.inner-page) .v2-hero .hero-copy>p {max-width:50ch;margin-top:28px;font-size:clamp(18px,1.5vw,21px);line-height:1.55;color:#f7f3f5}
+#iym-site:not(.inner-page) .v2-hero .hero-actions {gap:12px;margin-top:38px}
+#iym-site:not(.inner-page) .v2-hero .hero-actions .button {min-height:51px;padding:12px 22px;background:var(--renew-pink);font-size:16px}
+#iym-site:not(.inner-page) .v2-hero .hero-actions .text-link {min-height:51px;padding:12px 18px;border:1px solid rgba(255,255,255,.55);border-radius:999px;background:rgba(255,255,255,.1);color:white;text-decoration:none;font:700 16px/1.5 'Assistant',sans-serif}
+#iym-site:not(.inner-page) .v2-hero .hero-actions .text-link:hover {background:rgba(255,255,255,.22)}
+#iym-site:not(.inner-page) .v2-learning-card {width:100%;max-width:430px;min-height:360px;display:flex;flex-direction:column;justify-content:center;align-self:center;justify-self:end;transform:none;padding:34px;border:1px solid rgba(255,255,255,.34);border-radius:40px;background:linear-gradient(145deg,rgba(41,40,39,.42),rgba(15,15,15,.52));box-shadow:none;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:white;text-align:center}
+#iym-site:not(.inner-page) .v2-learning-card::before {display:none}
+#iym-site:not(.inner-page) .v2-card-heading {display:flex;justify-content:center;border:0;padding:0;color:#f7f3f5;font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+#iym-site:not(.inner-page) .v2-stage-display {min-height:190px}
+#iym-site:not(.inner-page) .v2-stage {padding:18px 0 10px}
+#iym-site:not(.inner-page) .v2-stage-age {padding:0;border:0;color:#f0dfe9;font-size:13px}
+#iym-site:not(.inner-page) .v2-stage h2 {margin-top:9px;color:white;font-size:29px;font-weight:500;line-height:1.12}
+#iym-site:not(.inner-page) .v2-stage p {max-width:29ch;margin:10px auto 0;color:#f3edef;font-size:14px;line-height:1.48}
+#iym-site:not(.inner-page) .v2-stage a {margin-top:11px;color:var(--renew-pink);font-size:14px}
+#iym-site:not(.inner-page) .v2-stage a img {filter:brightness(0) invert(1)}
+#iym-site:not(.inner-page) .v2-stage-controls {gap:4px;margin-top:auto;background:rgba(255,255,255,.12)}
+#iym-site:not(.inner-page) .v2-stage-controls button {color:white;font-size:12px}
+#iym-site:not(.inner-page) .v2-stage-controls button[aria-pressed="true"] {background:var(--renew-pink);color:var(--renew-ink)}
+#iym-site:not(.inner-page) .v2-stage-controls button:hover {background:rgba(255,255,255,.26)}
+#iym-site:not(.inner-page) .v2-hero-bottom {bottom:20px;color:#fff}
+
+/* An open confidence strip follows the media hero. */
+#iym-site:not(.inner-page) .partners {max-width:none;min-height:230px;display:grid;place-content:center;gap:15px;padding:60px 30px;border:0;background:#fffdfd;text-align:center}
+#iym-site:not(.inner-page) .partners h2 {font:600 clamp(20px,2vw,27px)/1.3 'Sora',sans-serif;letter-spacing:-.04em;text-transform:none;color:var(--renew-ink)}
+#iym-site:not(.inner-page) .partners p {max-width:70ch;margin:0 auto;color:#565056;font:400 16px/1.7 'Sora',sans-serif}
+
+/* Learning routes are image-led editorial rows rather than a pair of equal cards. */
+#iym-site:not(.inner-page) .program-paths {max-width:none;padding:105px max(6%,calc((100% - 1320px)/2)) 120px;background:#f7f4f2}
+#iym-site:not(.inner-page) .program-paths .section-intro {max-width:830px;margin:0 auto 60px;text-align:center}
+#iym-site:not(.inner-page) .program-paths .section-intro h2 {max-width:none;font-size:clamp(39px,4vw,56px);font-weight:500;line-height:1.14}
+#iym-site:not(.inner-page) .program-paths .section-intro p {margin:13px auto 0;font-size:17px}
+#iym-site:not(.inner-page) .program-path-grid {display:grid;grid-template-columns:1fr;gap:18px;max-width:1200px;margin:auto}
+#iym-site:not(.inner-page) .program-path-grid article {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);align-items:stretch;height:clamp(380px,36vw,500px);min-height:0;padding:0;border:1px solid #e7e2e2;border-radius:22px;background:#fffdfd;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+#iym-site:not(.inner-page) .program-path-grid article:nth-child(2) {background:#fffdfd}
+#iym-site:not(.inner-page) .program-path-grid article:nth-child(2) .path-photo {order:-1}
+#iym-site:not(.inner-page) .program-path-grid article::after {display:none}
+#iym-site:not(.inner-page) .program-path-grid article:hover {transform:translateY(-3px);box-shadow:0 15px 32px rgba(39,39,39,.08)}
+#iym-site:not(.inner-page) .path-copy {display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(34px,4vw,60px)}
+#iym-site:not(.inner-page) .program-path-grid h3 {max-width:18ch;font-size:clamp(29px,3vw,42px);font-weight:500;line-height:1.14}
+#iym-site:not(.inner-page) .program-path-grid p {max-width:44ch;margin-top:18px;font-size:16px;line-height:1.65}
+#iym-site:not(.inner-page) .program-path-grid .text-link {margin-top:25px;padding-top:0}
+#iym-site:not(.inner-page) .path-photo {display:block;width:100%;height:100%;min-height:0;object-fit:cover;object-position:center 35%}
+
+#iym-site:not(.inner-page) .intro {max-width:none;display:grid;grid-template-columns:1.1fr .9fr;column-gap:clamp(45px,7vw,110px);align-items:center;margin:0;padding:105px max(8%,calc((100% - 1200px)/2));background:#fffdfd;color:var(--renew-ink);text-align:left}
+#iym-site:not(.inner-page) .intro h2 {grid-column:1;grid-row:1/3;max-width:16ch;margin:0;font-size:clamp(40px,4.3vw,60px);font-weight:500;line-height:1.14}
+#iym-site:not(.inner-page) .intro h2 span {color:var(--renew-brown)}
+#iym-site:not(.inner-page) .intro p {grid-column:2;grid-row:1;max-width:56ch;margin:0 0 18px;font-size:17px;line-height:1.72}
+#iym-site:not(.inner-page) .intro .text-link {grid-column:2;grid-row:2;justify-self:start}
+
+/* A single product stage, with the learning tabs as controls above it. */
+#iym-site:not(.inner-page) .programs {padding:110px max(6%,calc((100% - 1320px)/2)) 120px;background:#f7f4f2}
+#iym-site:not(.inner-page) .program-intro {text-align:center}
+#iym-site:not(.inner-page) .program-intro h2 {max-width:none;font-size:clamp(43px,4.5vw,64px);font-weight:500;line-height:1.13}
+#iym-site:not(.inner-page) .program-intro>p {max-width:56ch;margin:17px auto 0;font-size:17px}
+#iym-site:not(.inner-page) .program-tabs {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;max-width:1020px;margin:50px auto 22px}
+#iym-site:not(.inner-page) .program-tabs button {display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;min-height:91px;padding:19px 25px;border:1px solid #ded5dc;border-radius:12px;background:white}
+#iym-site:not(.inner-page) .program-tabs button[aria-selected="true"] {background:var(--renew-pink);border-color:var(--renew-pink)}
+#iym-site:not(.inner-page) .program-tabs button .stage-label {font-size:20px;font-weight:600}
+#iym-site:not(.inner-page) .program-tabs button .stage-grade {font-size:13px}
+#iym-site:not(.inner-page) .program-intro>a {display:inline-flex;margin:0 0 26px}
+#iym-site:not(.inner-page) .program-content {max-width:1150px;margin:auto}
+#iym-site:not(.inner-page) .program-panel {display:grid;grid-template-columns:1.1fr .9fr;min-height:450px;border:1px solid #dedbd9;border-radius:16px;box-shadow:none;background:white}
+#iym-site:not(.inner-page) .program-panel[hidden] {display:none}
+#iym-site:not(.inner-page) .product-image {min-height:450px;height:auto;padding:45px;background:#ecf0e9}
+#iym-site:not(.inner-page) .product-image img {max-height:345px}
+#iym-site:not(.inner-page) .product-copy {padding:clamp(35px,4vw,60px)}
+#iym-site:not(.inner-page) .product-copy h3 {font-size:clamp(30px,3vw,43px);font-weight:500}
+#iym-site:not(.inner-page) .product-copy p {font-size:16px;line-height:1.7}
+#iym-site:not(.inner-page) .product-copy .button {background:var(--renew-pale);color:var(--renew-ink)}
+
+/* The calculator is presented as one focused action. */
+#iym-site:not(.inner-page) .budget-tool {position:relative;overflow:hidden;padding:110px 25px 125px;background:#fffdfd;color:var(--renew-ink);text-align:center}
+#iym-site:not(.inner-page) .budget-tool::before {content:"";position:absolute;z-index:0;left:50%;bottom:-280px;width:min(1150px,120vw);height:520px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,#fecff6 0%,rgba(254,207,246,.4) 48%,transparent 72%);pointer-events:none}
+#iym-site:not(.inner-page) .budget-tool-inner {position:relative;z-index:1;display:block;max-width:920px;margin:auto}
+#iym-site:not(.inner-page) .budget-tool .path-eyebrow {color:var(--renew-green)}
+#iym-site:not(.inner-page) .budget-tool h2 {max-width:17ch;margin:13px auto;font-size:clamp(42px,4.4vw,62px);font-weight:500;line-height:1.12}
+#iym-site:not(.inner-page) .budget-tool p:not(.path-eyebrow) {max-width:62ch;margin:18px auto;color:#565056;font-size:17px}
+#iym-site:not(.inner-page) .budget-tool .button {margin:25px auto 0;background:var(--renew-brown);color:white}
+#iym-site:not(.inner-page) .budget-tool-steps {display:grid;grid-template-columns:repeat(3,1fr);gap:0;max-width:800px;margin:65px auto 0;padding:10px 20px;border:1px solid #ded5dc;border-radius:14px;background:white;box-shadow:0 15px 35px rgba(39,39,39,.07);text-align:left}
+#iym-site:not(.inner-page) .budget-tool-steps li {display:grid;grid-template-columns:1fr;padding:20px}
+#iym-site:not(.inner-page) .budget-tool-steps li+li {border-top:0;border-left:1px solid #ded5dc}
+#iym-site:not(.inner-page) .budget-tool-steps li>span {grid-row:auto;padding:0;color:var(--renew-green)}
+#iym-site:not(.inner-page) .budget-tool-steps strong {font-size:15px}
+#iym-site:not(.inner-page) .budget-tool-steps small {font-size:13px}
+
+/* Workshop options use a visual with readable, open disclosures. */
+#iym-site:not(.inner-page) .workshops {max-width:none;padding:110px max(6%,calc((100% - 1320px)/2)) 125px;background:#fffdfd}
+#iym-site:not(.inner-page) .workshop-heading {max-width:950px;display:block;margin:0 auto 55px;text-align:center}
+#iym-site:not(.inner-page) .workshop-heading h2 {font-size:clamp(43px,4.5vw,64px);font-weight:500;line-height:1.14}
+#iym-site:not(.inner-page) .workshop-heading p {max-width:58ch;margin:15px auto 0;font-size:17px}
+#iym-site:not(.inner-page) .workshop-layout {display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;max-width:1200px;margin:auto;border:1px solid #e5dddf;border-radius:17px;background:#f7f4f2;overflow:hidden}
+#iym-site:not(.inner-page) .community-photo {position:relative;align-self:stretch;min-height:470px;height:auto;border-radius:0;background:#edf2ec}
+#iym-site:not(.inner-page) .community-photo img {position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0;object-fit:cover;object-position:center 27%}
+#iym-site:not(.inner-page) .workshop-details {padding:48px;color:var(--renew-ink)}
+#iym-site:not(.inner-page) .workshop-details details {border-color:#d7d0d3}
+#iym-site:not(.inner-page) .workshop-details summary {font-size:18px}
+#iym-site:not(.inner-page) .workshop-details details p {color:#565056}
+#iym-site:not(.inner-page) .workshop-details .text-link {color:var(--renew-brown)}
+#iym-site:not(.inner-page) .workshop-details .button {background:var(--renew-brown);color:white}
+#iym-site:not(.inner-page) .workshop-details .button img {filter:brightness(0) invert(1)}
+
+/* Keep the approved voices together on an open surface. */
+#iym-site:not(.inner-page) .testimonial {display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center;padding:95px max(7%,calc((100% - 1150px)/2));background:#feeffb;color:var(--renew-ink);text-align:left}
+#iym-site:not(.inner-page) .quote-intro h2 {font-size:clamp(36px,3.7vw,52px);font-weight:500;line-height:1.16}
+#iym-site:not(.inner-page) .quote-intro p {color:var(--renew-green)}
+#iym-site:not(.inner-page) .testimonial figure {margin:0}
+#iym-site:not(.inner-page) .testimonial blockquote {font-size:clamp(23px,2.3vw,31px);line-height:1.48}
+#iym-site:not(.inner-page) .testimonial figcaption span {color:#565056}
+#iym-site:not(.inner-page) .student-voices {max-width:none;padding:95px max(7%,calc((100% - 1150px)/2)) 110px;background:#fffdfd}
+#iym-site:not(.inner-page) .student-voices .section-intro {display:block;margin:0 0 35px;text-align:center}
+#iym-site:not(.inner-page) .student-voices .section-intro h2 {font-size:clamp(34px,3.5vw,47px);font-weight:500}
+#iym-site:not(.inner-page) .student-voices .section-intro p {margin:12px auto 0}
+#iym-site:not(.inner-page) .student-voices-grid {max-width:1050px;margin:auto;gap:15px}
+#iym-site:not(.inner-page) .student-voices-grid figure {padding:34px;border:1px solid #e6e1e3;border-radius:14px;background:#fffdfd}
+#iym-site:not(.inner-page) .student-voices-grid blockquote {font-size:clamp(19px,1.7vw,24px)}
+
+/* A concise dark trust chapter replaces the repeated photo treatment. */
+#iym-site:not(.inner-page) .approach {max-width:none;margin:0;padding:105px max(7%,calc((100% - 1150px)/2)) 115px;background:var(--renew-ink);color:white}
+#iym-site:not(.inner-page) .approach-copy {max-width:none}
+#iym-site:not(.inner-page) .approach-copy>h2 {max-width:17ch;margin:0 auto 55px;text-align:center;font-size:clamp(41px,4.3vw,60px);font-weight:500}
+#iym-site:not(.inner-page) .approach-visual .approach-grid {grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:0}
+#iym-site:not(.inner-page) .approach-grid>div {min-height:230px;padding:28px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.045)}
+#iym-site:not(.inner-page) .approach-grid h3 {color:white;font-size:22px;font-weight:500}
+#iym-site:not(.inner-page) .approach-grid p {color:#eee8ed;font-size:15px;line-height:1.7}
+
+#iym-site:not(.inner-page) .faq {max-width:none;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;padding:110px max(7%,calc((100% - 1150px)/2));background:var(--renew-pink)}
+#iym-site:not(.inner-page) .faq h2 {margin:0;text-align:left;font-size:clamp(40px,4vw,58px);font-weight:500;line-height:1.13}
+#iym-site:not(.inner-page) .faq details {border-color:rgba(39,39,39,.3)}
+#iym-site:not(.inner-page) .closing {position:relative;isolation:isolate;overflow:hidden;padding:100px 24px 115px;background-color:#fffdfd;background-image:linear-gradient(90deg,rgba(255,253,253,.94) 0%,rgba(255,253,253,.84) 47%,rgba(254,239,251,.88) 100%),url('assets/real-group-workshop.webp');background-position:center;background-repeat:no-repeat;background-size:cover;color:var(--renew-ink);text-align:center}
+#iym-site:not(.inner-page) .closing::before,#iym-site:not(.inner-page) .closing::after {content:none}
+#iym-site:not(.inner-page) .closing h2 {max-width:17ch;margin:auto;font-size:clamp(45px,5vw,72px);font-weight:500;line-height:1.12}
+#iym-site:not(.inner-page) .closing>div {max-width:570px;margin:24px auto 0}
+#iym-site:not(.inner-page) .closing .button {background:var(--renew-brown);color:white}
+
+@media(max-width:1050px) {
+  #iym-site:not(.inner-page) .site-header .main-nav {gap:12px}
+  #iym-site:not(.inner-page) .v2-hero-inner {grid-template-columns:minmax(0,1fr) minmax(320px,.75fr);padding-inline:5%;gap:28px}
+  #iym-site:not(.inner-page) .v2-hero h1 {font-size:clamp(43px,4.7vw,55px)}
+}
+@media(max-width:900px) {
+  #iym-site:not(.inner-page) .site-header {top:0;padding-inline:23px}
+  #iym-site:not(.inner-page) .site-header .menu-toggle {color:white;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  #iym-site:not(.inner-page) .site-header .menu-toggle img {filter:brightness(0) invert(1)}
+  #iym-site:not(.inner-page) .site-header .main-nav {background:#fffdfd}
+  #iym-site:not(.inner-page) .site-header .main-nav a,#iym-site:not(.inner-page) .site-header .nav-shop-trigger {color:#272727!important;text-shadow:none}
+  #iym-site:not(.inner-page) .site-header .nav-shop-trigger .nav-chevron {border-color:#272727}
+  #iym-site:not(.inner-page) .v2-hero-inner {grid-template-columns:1fr;gap:48px;min-height:0;padding:145px 7% 105px}
+  #iym-site:not(.inner-page) .v2-hero .hero-copy {max-width:650px}
+  #iym-site:not(.inner-page) .v2-learning-card {justify-self:start;max-width:500px}
+  #iym-site:not(.inner-page) .program-paths,#iym-site:not(.inner-page) .programs,#iym-site:not(.inner-page) .workshops {padding-inline:6%}
+  #iym-site:not(.inner-page) .program-path-grid article {grid-template-columns:1fr 1fr}
+  #iym-site:not(.inner-page) .workshop-details {padding:30px}
+}
+@media(max-width:640px) {
+  #iym-site:not(.inner-page) .site-header {min-height:72px;padding-inline:18px}
+  #iym-site:not(.inner-page) .site-header .brand img {width:126px}
+  #iym-site:not(.inner-page) .v2-hero-media,#iym-site:not(.inner-page) .v2-hero-media img {height:420px}
+  #iym-site:not(.inner-page) .v2-hero-media img {object-position:center top}
+  #iym-site:not(.inner-page) .v2-hero-scrim {background:linear-gradient(180deg,rgba(25,24,23,.5) 0,rgba(25,24,23,.24) 245px,rgba(25,24,23,.5) 340px,#272727 420px,#272727 100%)}
+  #iym-site:not(.inner-page) .v2-hero-inner {gap:42px;padding:447px 23px 100px}
+  #iym-site:not(.inner-page) .v2-hero h1 {font-size:clamp(38px,10vw,49px);line-height:1.12}
+  #iym-site:not(.inner-page) .v2-hero .hero-copy>p {margin-top:20px;font-size:16px}
+  #iym-site:not(.inner-page) .v2-hero .hero-actions {align-items:flex-start;gap:10px;margin-top:24px}
+  #iym-site:not(.inner-page) .v2-hero .hero-actions .text-link {font-size:14px}
+  #iym-site:not(.inner-page) .v2-learning-card {min-height:340px;padding:26px;border-radius:25px}
+  #iym-site:not(.inner-page) .v2-stage-display {min-height:182px}
+  #iym-site:not(.inner-page) .v2-stage h2 {font-size:26px}
+  #iym-site:not(.inner-page) .v2-stage-controls button {font-size:11px}
+  #iym-site:not(.inner-page) .partners {min-height:0;padding:64px 23px}
+  #iym-site:not(.inner-page) .program-paths {padding:78px 20px 88px}
+  #iym-site:not(.inner-page) .program-paths .section-intro {margin-bottom:35px}
+  #iym-site:not(.inner-page) .program-paths .section-intro h2 {font-size:36px}
+  #iym-site:not(.inner-page) .program-path-grid article {grid-template-columns:1fr;height:auto}
+  #iym-site:not(.inner-page) .program-path-grid article:nth-child(2) .path-photo {order:0}
+  #iym-site:not(.inner-page) .path-copy {padding:28px}
+  #iym-site:not(.inner-page) .path-photo {height:220px;min-height:220px}
+  #iym-site:not(.inner-page) .intro {display:block;padding:82px 23px}
+  #iym-site:not(.inner-page) .intro h2 {font-size:39px}
+  #iym-site:not(.inner-page) .intro p {margin:22px 0 15px}
+  #iym-site:not(.inner-page) .programs {padding:82px 20px 90px}
+  #iym-site:not(.inner-page) .program-intro h2 {font-size:41px}
+  #iym-site:not(.inner-page) .program-tabs {grid-template-columns:1fr;gap:7px;margin:32px auto 17px}
+  #iym-site:not(.inner-page) .program-tabs button {min-height:68px;padding:12px 18px}
+  #iym-site:not(.inner-page) .program-panel {grid-template-columns:1fr}
+  #iym-site:not(.inner-page) .product-image {height:280px;min-height:280px;padding:25px}
+  #iym-site:not(.inner-page) .product-image img {max-height:230px}
+  #iym-site:not(.inner-page) .product-copy {padding:28px}
+  #iym-site:not(.inner-page) .budget-tool {padding:80px 22px 95px}
+  #iym-site:not(.inner-page) .budget-tool h2 {font-size:40px}
+  #iym-site:not(.inner-page) .budget-tool-steps {grid-template-columns:1fr;max-width:380px;margin-top:42px}
+  #iym-site:not(.inner-page) .budget-tool-steps li {padding:15px 10px}
+  #iym-site:not(.inner-page) .budget-tool-steps li+li {border-left:0;border-top:1px solid #ded5dc}
+  #iym-site:not(.inner-page) .workshops {padding:80px 20px 90px}
+  #iym-site:not(.inner-page) .workshop-heading h2 {font-size:40px}
+  #iym-site:not(.inner-page) .workshop-layout {grid-template-columns:1fr}
+  #iym-site:not(.inner-page) .community-photo {height:280px;min-height:280px}
+  #iym-site:not(.inner-page) .community-photo img {min-height:0;object-position:center 8%}
+  #iym-site:not(.inner-page) .workshop-details {padding:25px}
+  #iym-site:not(.inner-page) .testimonial {grid-template-columns:1fr;gap:22px;padding:74px 24px}
+  #iym-site:not(.inner-page) .testimonial blockquote {font-size:24px}
+  #iym-site:not(.inner-page) .student-voices {padding:75px 22px 85px}
+  #iym-site:not(.inner-page) .student-voices-grid {grid-template-columns:1fr}
+  #iym-site:not(.inner-page) .approach {padding:80px 22px}
+  #iym-site:not(.inner-page) .approach-copy>h2 {font-size:39px}
+  #iym-site:not(.inner-page) .approach-visual .approach-grid {grid-template-columns:1fr}
+  #iym-site:not(.inner-page) .approach-grid>div {min-height:0}
+  #iym-site:not(.inner-page) .faq {grid-template-columns:1fr;gap:30px;padding:80px 22px}
+  #iym-site:not(.inner-page) .faq h2 {font-size:39px}
+  #iym-site:not(.inner-page) .closing {padding:85px 22px}
+  #iym-site:not(.inner-page) .closing h2 {font-size:41px}
+}
+@media(prefers-reduced-motion:reduce) {
+  #iym-site:not(.inner-page) .program-path-grid article:hover {transform:none}
+  #iym-site:not(.inner-page) .v2-hero-media img {animation:none;transition:none}
+}
+
+/* Let the portrait and learning card lead the homepage hero. */
+#iym-site:not(.inner-page) .v2-hero .hero-copy {align-self:end;max-width:560px;padding-bottom:24px}
+#iym-site:not(.inner-page) .v2-hero .hero-copy>.hero-eyebrow {display:inline-flex;align-items:center;min-height:34px;margin:0 0 18px;padding:5px 13px;border:1px solid rgba(255,255,255,.65);border-radius:999px;background:rgba(39,39,39,.38);color:#fecff6;font:700 13px/1.25 'Assistant',sans-serif;letter-spacing:.04em;text-transform:uppercase}
+#iym-site:not(.inner-page) .v2-hero .hero-copy>.hero-intro {max-width:22ch;margin:0;color:#fff;font:600 clamp(36px,3.35vw,52px)/1.16 'Sora',sans-serif;letter-spacing:-.045em;text-wrap:balance}
+#iym-site:not(.inner-page) .v2-hero .hero-copy>.hero-subtitle {max-width:34ch;margin:18px 0 0;color:#f7f3f5;font:500 clamp(18px,1.45vw,21px)/1.5 'Sora',sans-serif;text-wrap:balance}
+#iym-site:not(.inner-page) .v2-hero .hero-actions {margin-top:29px}
+@media(max-width:900px) {
+  #iym-site:not(.inner-page) .v2-hero .hero-copy {align-self:auto;max-width:650px;padding-bottom:0}
+}
+@media(max-width:640px) {
+  #iym-site:not(.inner-page) .v2-hero .hero-copy>.hero-eyebrow {margin-bottom:14px;font-size:12px}
+  #iym-site:not(.inner-page) .v2-hero .hero-copy>.hero-intro {max-width:100%;font-size:clamp(31px,8.5vw,39px);line-height:1.18}
+  #iym-site:not(.inner-page) .v2-hero .hero-copy>.hero-subtitle {margin-top:15px;font-size:17px;line-height:1.5}
+  #iym-site:not(.inner-page) .v2-hero .hero-actions {margin-top:23px}
+}
+
+/* Calculator entry card in the homepage hero. */
+#iym-site:not(.inner-page) .v2-calculator-card {max-width:430px;min-height:0;align-items:stretch;justify-content:flex-start;gap:0;text-align:left;padding:30px 32px 26px}
+#iym-site:not(.inner-page) .v2-calculator-card .v2-card-heading {display:block;margin:0 0 12px;color:#fecff6;font:700 12px/1.3 'Assistant',sans-serif;letter-spacing:.1em;text-transform:uppercase}
+#iym-site:not(.inner-page) .v2-calculator-card h2 {margin:0;color:#fff;font:600 clamp(25px,2.3vw,31px)/1.18 'Sora',sans-serif;letter-spacing:-.045em}
+#iym-site:not(.inner-page) .v2-calculator-card .v2-calculator-intro {margin:10px 0 20px;color:#f6eef3;font:400 14px/1.55 'Sora',sans-serif}
+#iym-site:not(.inner-page) .v2-calculator-card form {display:grid;gap:12px}
+#iym-site:not(.inner-page) .v2-calculator-field {display:grid;gap:5px}
+#iym-site:not(.inner-page) .v2-calculator-field label {color:#fff;font:700 13px/1.3 'Assistant',sans-serif}
+#iym-site:not(.inner-page) .v2-calculator-field input {display:block;width:100%;min-height:46px;padding:10px 14px;border:1px solid #ded5dc;border-radius:11px;background:#fffdfd;color:#272727;font:400 16px/1.4 'Assistant',sans-serif}
+#iym-site:not(.inner-page) .v2-calculator-field input:focus-visible,#iym-site:not(.inner-page) .v2-calculator-submit:focus-visible,#iym-site:not(.inner-page) .v2-calculator-note a:focus-visible {outline:3px solid #7ead90;outline-offset:4px}
+#iym-site:not(.inner-page) .v2-calculator-submit {display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:49px;margin-top:5px;padding:11px 16px;border:0;border-radius:999px;background:#fecff6;color:#272727;font:700 15px/1.3 'Assistant',sans-serif;cursor:pointer;transition:background .2s ease,transform .2s ease}
+#iym-site:not(.inner-page) .v2-calculator-submit:hover {background:#feeffb}
+#iym-site:not(.inner-page) .v2-calculator-submit:active {transform:scale(.985)}
+#iym-site:not(.inner-page) .v2-calculator-submit img {width:18px;height:18px}
+#iym-site:not(.inner-page) .v2-calculator-note {margin:2px 0 0;color:#f2e8ed;font:400 12px/1.5 'Assistant',sans-serif}
+#iym-site:not(.inner-page) .v2-calculator-note a {color:#fecff6;text-underline-offset:3px}
+#iym-site:not(.inner-page) .v2-calculator-status {margin:0;color:#fff;font:600 13px/1.4 'Assistant',sans-serif}
+#iym-site:not(.inner-page) .v2-calculator-status:empty {display:none}
+@media(max-width:900px) {#iym-site:not(.inner-page) .v2-calculator-card {max-width:500px}}
+@media(max-width:640px) {#iym-site:not(.inner-page) .v2-calculator-card {padding:26px 22px 23px}}
+@media(prefers-reduced-motion:reduce) {#iym-site:not(.inner-page) .v2-calculator-submit {transition:none}}
+
+/* The worksheet needs a full-size view, so it opens in a native dialog. */
+#iym-site .budget-dialog {position:fixed;inset:0;width:min(1120px,calc(100vw - 32px));height:min(850px,calc(100dvh - 32px));max-width:none;max-height:none;margin:auto;padding:0;border:1px solid #ded5dc;border-radius:22px;background:#fffdfd;color:#272727;box-shadow:0 30px 90px rgba(27,21,27,.3);overflow:hidden}
+#iym-site .budget-dialog::backdrop {background:rgba(22,18,21,.72);backdrop-filter:blur(5px)}
+#iym-site .budget-dialog-shell {display:flex;flex-direction:column;height:100%;min-height:0}
+#iym-site .budget-dialog-header {display:flex;justify-content:space-between;gap:24px;align-items:flex-start;padding:24px 30px 20px;border-bottom:1px solid #ded5dc;background:#feeffb}
+#iym-site .budget-dialog-eyebrow {margin:0 0 5px;color:#4e7661;font:700 12px/1.3 'Assistant',sans-serif;letter-spacing:.08em;text-transform:uppercase}
+#iym-site .budget-dialog-header h2 {margin:0;font:600 clamp(25px,3vw,37px)/1.15 'Sora',sans-serif;letter-spacing:-.04em}
+#iym-site .budget-dialog-header p:last-child {margin:7px 0 0;color:#565056;font:400 14px/1.5 'Assistant',sans-serif}
+#iym-site .budget-dialog-close {flex:none;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:9px 15px;border:1px solid #8b572a;border-radius:999px;background:#fffdfd;color:#272727;font:700 14px/1 'Assistant',sans-serif;cursor:pointer}
+#iym-site .budget-dialog-close svg {display:block;flex:none;width:16px;height:16px}
+#iym-site .budget-dialog-close:hover {background:#fce2f6}
+#iym-site .budget-dialog-body {min-height:0;overflow:auto;padding:22px 30px 30px;overscroll-behavior:contain}
+#iym-site .budget-controls {display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+#iym-site .budget-controls label {display:grid;gap:5px;color:#565056;font:700 13px 'Assistant',sans-serif}
+#iym-site .budget-controls select,#iym-site .budget-controls input {min-width:150px;min-height:44px;padding:8px 12px;border:1px solid #bcb2b9;border-radius:9px;background:white;color:#272727;font:600 15px 'Assistant',sans-serif}
+#iym-site .budget-controls input {width:110px;min-width:110px}
+#iym-site .budget-week-tabs {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:20px}
+#iym-site .budget-week-tabs button {display:grid;gap:3px;min-height:58px;padding:8px 10px;border:1px solid #ded5dc;border-radius:12px;background:white;color:#272727;font:700 14px 'Assistant',sans-serif;text-align:left;cursor:pointer}
+#iym-site .budget-week-tabs button.is-selected {border-color:#8b572a;background:#fecff6}
+#iym-site .budget-week-tabs small {font-size:12px;font-weight:600}
+#iym-site .budget-workspace {display:grid;grid-template-columns:minmax(0,1.65fr) minmax(260px,1fr);gap:28px;align-items:start}
+#iym-site .budget-entries h3,#iym-site .budget-results h3 {margin:0 0 5px;font:600 24px/1.2 'Sora',sans-serif;letter-spacing:-.03em}
+#iym-site .budget-help {margin:0 0 18px;color:#565056;font:400 14px/1.5 'Assistant',sans-serif}
+#iym-site .budget-income-block {padding:18px;border-radius:14px;background:#edf2ec}
+#iym-site .budget-income-block h4 {margin:0 0 12px;font:700 16px 'Assistant',sans-serif}
+#iym-site .budget-field-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#iym-site .budget-money-field {display:grid;gap:5px;min-width:0;color:#272727;font:600 13px/1.35 'Assistant',sans-serif}
+#iym-site .budget-money-field input {width:100%;min-height:44px;padding:9px 12px;border:1px solid #bcb2b9;border-radius:9px;background:white;color:#272727;font:400 16px 'Assistant',sans-serif;font-variant-numeric:tabular-nums}
+#iym-site .budget-money-field input[aria-invalid="true"] {border-color:#b42330;box-shadow:0 0 0 2px rgba(180,35,48,.14)}
+#iym-site .budget-category {margin-top:10px;border:1px solid #ded5dc;border-radius:12px;background:#fffdfd}
+#iym-site .budget-category summary {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:center;min-height:54px;padding:12px 16px;cursor:pointer;list-style-position:inside}
+#iym-site .budget-category summary strong {font:700 15px 'Assistant',sans-serif}
+#iym-site .budget-category summary span {grid-column:1;color:#565056;font:400 12px 'Assistant',sans-serif}
+#iym-site .budget-category summary output {grid-column:2;grid-row:1/3;font:700 15px 'Assistant',sans-serif;font-variant-numeric:tabular-nums}
+#iym-site .budget-category .budget-field-grid {padding:0 16px 17px}
+#iym-site .budget-results {position:sticky;top:0;padding:22px;border:1px solid #ded5dc;border-radius:16px;background:#feeffb}
+#iym-site .budget-results h3 {font-size:22px;margin-bottom:14px}
+#iym-site .budget-results h4 {margin:18px 0 8px;padding-top:14px;border-top:1px solid #ded5dc;font:700 14px 'Assistant',sans-serif}
+#iym-site .budget-results h4:first-child {margin-top:0;padding-top:0;border-top:0}
+#iym-site .budget-result-row {display:flex;justify-content:space-between;gap:12px;margin:6px 0;font:400 13px/1.4 'Assistant',sans-serif}
+#iym-site .budget-result-row output {font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+#iym-site .budget-result-row.is-strong {margin-top:10px;padding-top:9px;border-top:1px solid #ded5dc;font-weight:700}
+#iym-site .budget-breakdown {margin-top:18px;border-top:1px solid #ded5dc;padding-top:14px}
+#iym-site .budget-breakdown summary {min-height:44px;font:700 14px 'Assistant',sans-serif;cursor:pointer}
+#iym-site .budget-privacy {margin:18px 0 8px;color:#565056;font:400 12px/1.5 'Assistant',sans-serif}
+#iym-site .budget-clear {min-height:44px;padding:8px 0;border:0;background:transparent;color:#8b572a;font:700 14px 'Assistant',sans-serif;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+#iym-site .budget-dialog :is(button,input,select,summary):focus-visible {outline:3px solid #4e7661;outline-offset:4px}
+@media(max-width:760px) {#iym-site .budget-workspace {grid-template-columns:1fr}#iym-site .budget-results {position:static}#iym-site .budget-week-tabs {grid-template-columns:repeat(5,minmax(90px,1fr));overflow-x:auto}#iym-site .budget-dialog-body {padding:18px}}
+@media(max-width:520px) {#iym-site .budget-dialog {inset:0;width:100vw;height:100dvh;border:0;border-radius:0}#iym-site .budget-dialog-header {padding:19px 16px;gap:12px}#iym-site .budget-dialog-header h2 {font-size:24px}#iym-site .budget-dialog-header p:last-child {font-size:12px}#iym-site .budget-dialog-close {min-width:44px;padding:9px}#iym-site .budget-dialog-close span {display:none}#iym-site .budget-dialog-close svg {width:20px;height:20px}#iym-site .budget-field-grid {grid-template-columns:1fr}#iym-site .budget-week-tabs {grid-template-columns:repeat(5,100px)}}

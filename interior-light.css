@@ -1,0 +1,538 @@
+/* V2 interior page hero refresh. Article titles remain visible. */
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.contact-hero) {position:relative;isolation:isolate;background:#feeffb;color:#272727;overflow:hidden}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.contact-hero) :is(p,figcaption) {color:#474047}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.contact-hero) h1 {position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.contact-hero) .button {background:#8b572a;color:#fff}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.contact-hero) .button:hover {background:#714421;color:#fff}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.contact-hero) .button img {filter:brightness(0) invert(1)}
+#iym-site.inner-page .interior-hero-copy>p:not(.path-eyebrow),#iym-site.inner-page .title-hero .hero-bottom>p,#iym-site.inner-page .blog-hero-inner>p:last-child {max-width:35ch;margin:0 0 30px;color:#272727;font:500 clamp(22px,2.6vw,36px)/1.4 'Sora',sans-serif;letter-spacing:-.035em;text-wrap:balance}
+#iym-site.inner-page .interior-hero-copy {padding-block:74px}
+#iym-site.inner-page :is(.about-hero,.shop-hero,.events-hero) {min-height:520px;align-items:center}
+#iym-site.inner-page :is(.about-community-hero,.shop-hero-photo,.events-photo) {margin:0;padding:28px 38px 28px 0}
+#iym-site.inner-page :is(.about-community-hero,.shop-hero-photo,.events-photo) img {display:block;width:100%;max-height:460px;aspect-ratio:1.38;object-fit:cover;border-radius:14px 40px 40px 40px}
+#iym-site.inner-page :is(.about-community-hero,.events-photo) figcaption {margin-top:12px;font:600 13px/1.4 'Assistant',sans-serif}
+#iym-site.inner-page .about-hero {background:#feeffb}
+#iym-site.inner-page .shop-hero {background:#edf2ec}
+#iym-site.inner-page .events-hero {background:#fff6fd}
+#iym-site.inner-page :is(.about-hero,.shop-hero,.events-hero) .interior-hero-copy::before,#iym-site.inner-page .appointments-page-label,#iym-site.inner-page .contact-copy::before {display:block;margin-bottom:22px;color:#4e7661;font:700 13px/1.35 'Assistant',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+#iym-site.inner-page .about-hero .interior-hero-copy::before {content:'About Invest Young Money'}
+#iym-site.inner-page .shop-hero .interior-hero-copy::before {content:'Learning resources'}
+#iym-site.inner-page .events-hero .interior-hero-copy::before {content:'Events and learning'}
+#iym-site.inner-page .contact-copy::before {content:'Contact Invest Young Money'}
+#iym-site.inner-page .title-hero {min-height:430px;display:grid;align-items:center;padding-block:80px;background:#edf2ec}
+#iym-site.inner-page .title-hero>.container {position:relative;z-index:1;width:min(100% - 80px,1280px)}
+#iym-site.inner-page .title-hero .hero-bottom {margin:0;flex-direction:column;align-items:flex-start;gap:24px}
+#iym-site.inner-page .title-hero .hero-bottom>p {max-width:30ch;margin:0}
+#iym-site.inner-page.appointments-page .title-hero {background:radial-gradient(circle at 88% 36%,#c9d8ca 0 14%,transparent 14.2%),radial-gradient(circle at 76% 80%,#dbe7da 0 22%,transparent 22.2%),#edf2ec}
+#iym-site.inner-page.appointments-page .title-hero>.container::before {content:'Appointments';display:block;margin-bottom:22px;color:#4e7661;font:700 13px/1.35 'Assistant',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+#iym-site.inner-page.corporate-page .title-hero {background:linear-gradient(90deg,#feeffb 0%,rgba(254,239,251,.98) 48%,rgba(254,239,251,.72) 74%,rgba(254,239,251,.2) 100%),url('assets/real-corporate-partnership.webp') right center / 52% auto no-repeat}
+#iym-site.inner-page.corporate-page .title-hero .path-eyebrow {margin:0 0 22px;color:#4e7661}
+#iym-site.inner-page .blog-hero {padding:100px 0;background:radial-gradient(circle at 86% 18%,#fecff6 0 10%,transparent 10.2%),radial-gradient(circle at 95% 85%,#edf2ec 0 18%,transparent 18.2%),#fffdfd}
+#iym-site.inner-page .blog-hero-inner {position:relative;z-index:1}
+#iym-site.inner-page .blog-hero-inner>.blog-eyebrow {margin:0 0 22px;color:#4e7661}
+#iym-site.inner-page .blog-hero-inner>p:last-child {margin:0}
+#iym-site.inner-page .shop-category-hero {padding:76px 0;background:radial-gradient(circle at 84% 50%,rgba(254,207,246,.7) 0 13%,transparent 13.2%),radial-gradient(circle at 94% 58%,rgba(237,242,236,.95) 0 19%,transparent 19.2%),#fffdfd}
+#iym-site.inner-page .shop-category-hero>.container {position:relative;z-index:1}
+#iym-site.inner-page .shop-breadcrumb,#iym-site.inner-page .shop-breadcrumb a {color:#4e7661;text-decoration-color:#4e7661}
+#iym-site.inner-page .shop-category-hero p {max-width:36ch;margin:20px 0 0;color:#272727;font:500 clamp(21px,2.3vw,30px)/1.42 'Sora',sans-serif;letter-spacing:-.03em}
+#iym-site.inner-page .contact-hero {padding-block:72px;background:#feeffb}
+#iym-site.inner-page .contact-copy>p:first-of-type {max-width:31ch;margin:0 0 30px;color:#272727;font:500 clamp(22px,2.5vw,34px)/1.42 'Sora',sans-serif;letter-spacing:-.03em}
+#iym-site.inner-page .contact-hero .contact-details dt,#iym-site.inner-page .contact-hero .contact-details dd,#iym-site.inner-page .contact-hero .contact-details a {color:#272727}
+#iym-site.inner-page .contact-hero .contact-copy .text-link {color:#8b572a}
+#iym-site.inner-page .contact-hero .section-photo {max-width:470px;margin-top:30px}
+#iym-site.inner-page .contact-hero .section-photo img {border-radius:14px 40px 40px 40px}
+#iym-site.inner-page .contact-hero .contact-form-panel {box-shadow:0 18px 40px rgba(39,39,39,.07)}
+@media(max-width:900px) {
+  #iym-site.inner-page :is(.about-hero,.shop-hero,.events-hero) {min-height:0}
+  #iym-site.inner-page .interior-hero-copy {padding:56px 34px}
+  #iym-site.inner-page :is(.about-community-hero,.shop-hero-photo,.events-photo) {padding:16px 34px 32px}
+  #iym-site.inner-page .title-hero {min-height:340px}
+  #iym-site.inner-page .title-hero>.container {width:min(100% - 68px,1280px)}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page .interior-hero-copy {padding:42px 23px 30px}
+  #iym-site.inner-page .interior-hero-copy>p:not(.path-eyebrow),#iym-site.inner-page .title-hero .hero-bottom>p,#iym-site.inner-page .blog-hero-inner>p:last-child {font-size:clamp(22px,6vw,29px);line-height:1.38}
+  #iym-site.inner-page :is(.about-community-hero,.shop-hero-photo,.events-photo) {padding:0 23px 40px}
+  #iym-site.inner-page :is(.about-community-hero,.shop-hero-photo,.events-photo) img {max-height:320px}
+  #iym-site.inner-page .title-hero {min-height:0;padding-block:66px;background-size:cover}
+  #iym-site.inner-page.appointments-page .title-hero {background:#edf2ec}
+  #iym-site.inner-page.corporate-page .title-hero {background:#feeffb}
+  #iym-site.inner-page .title-hero>.container {width:calc(100% - 46px)}
+  #iym-site.inner-page .title-hero .hero-bottom {display:block}
+  #iym-site.inner-page .title-hero .button {margin-top:22px}
+  #iym-site.inner-page .blog-hero {padding:65px 0}
+  #iym-site.inner-page .shop-category-hero {padding:55px 0}
+  #iym-site.inner-page .shop-category-hero p {font-size:23px}
+  #iym-site.inner-page .contact-hero {padding-block:42px}
+  #iym-site.inner-page .contact-copy>p:first-of-type {font-size:23px}
+}
+
+/* Final interior-hero standard: one quiet white-to-pink canvas, editorial copy on
+   the left, and a route-specific vector scene on the right. Home is intentionally
+   excluded from this system. */
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) {
+  min-height:500px;
+  background:radial-gradient(circle at 86% 22%,rgba(254,207,246,.56) 0 10%,transparent 10.2%),linear-gradient(112deg,#fffdfd 0%,#fffdfd 50%,#feeffb 100%)!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::before {background:rgba(237,242,236,.72)}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::after {width:min(35vw,448px);height:min(32vw,414px)}
+
+/* Each purpose has its own illustration. The drawings deliberately use no plus or cross marks. */
+#iym-site.inner-page.about-page .about-hero::after {background-image:url('assets/hero-art-about.svg')}
+#iym-site.inner-page.events-page .events-hero::after {background-image:url('assets/hero-art-events.svg')}
+#iym-site.inner-page.courses-page .courses-intro::after,#iym-site.inner-page[data-shop-category="courses"] .shop-category-hero::after {background-image:url('assets/hero-art-learning.svg')}
+#iym-site.inner-page.shop-page .shop-hero::after {background-image:url('assets/hero-art-shop.svg')}
+#iym-site.inner-page.appointments-page .title-hero::after {background-image:url('assets/hero-art-calendar.svg')}
+#iym-site.inner-page.corporate-page .corporate-hero::after {background-image:url('assets/hero-art-corporate.svg')}
+#iym-site.inner-page.blog-page .blog-hero::after {background-image:url('assets/hero-art-journal.svg')}
+#iym-site.inner-page.gallery-page .gallery-hero::after {background-image:url('assets/hero-art-gallery.svg')}
+#iym-site.inner-page.contact-page .contact-hero::after {background-image:url('assets/hero-art-contact.svg');opacity:.55}
+#iym-site.inner-page[data-shop-category="bundles"] .shop-category-hero::after {background-image:url('assets/hero-art-bundles.svg')}
+#iym-site.inner-page[data-shop-category="elementary"] .shop-category-hero::after {background-image:url('assets/hero-art-elementary.svg')}
+#iym-site.inner-page[data-shop-category="middle"] .shop-category-hero::after {background-image:url('assets/hero-art-middle.svg')}
+#iym-site.inner-page[data-shop-category="high"] .shop-category-hero::after {background-image:url('assets/hero-art-high.svg')}
+#iym-site.inner-page[data-shop-category="apparel"] .shop-category-hero::after {background-image:url('assets/hero-art-shop.svg')}
+#iym-site.inner-page[data-shop-category="hoodies"] .shop-category-hero::after {background-image:url('assets/hero-art-community.svg')}
+#iym-site.inner-page[data-shop-category="tshirts"] .shop-category-hero::after {background-image:url('assets/hero-art-gallery.svg')}
+#iym-site.inner-page[data-shop-category="kidsclothing"] .shop-category-hero::after {background-image:url('assets/hero-art-elementary.svg')}
+#iym-site.inner-page[data-shop-category="accessories"] .shop-category-hero::after {background-image:url('assets/hero-art-community.svg')}
+#iym-site.inner-page[data-shop-category="bags"] .shop-category-hero::after {background-image:url('assets/hero-art-shop.svg')}
+#iym-site.inner-page[data-shop-category="keyrings"] .shop-category-hero::after {background-image:url('assets/hero-art-calendar.svg')}
+#iym-site.inner-page[data-shop-category="mugs"] .shop-category-hero::after {background-image:url('assets/hero-art-events.svg')}
+#iym-site.inner-page[data-shop-category="journals"] .shop-category-hero::after {background-image:url('assets/hero-art-journal.svg')}
+
+/* Contact keeps its working form but uses the same luminous background field. */
+#iym-site.inner-page.contact-page .contact-hero {background:radial-gradient(circle at 85% 18%,rgba(254,207,246,.52) 0 10%,transparent 10.2%),linear-gradient(112deg,#fffdfd 0%,#fffdfd 47%,#feeffb 100%)!important}
+
+@media(max-width:900px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) {min-height:420px}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) {min-height:0}
+}
+
+/* About sections alternate with the founder story and each other. */
+#iym-site.inner-page.about-page .about-principles-band {background:#edf2ec}
+#iym-site.inner-page.about-page .about-audiences-band {background:#feeffb}
+
+/* Courses has its own editorial hero instead of the category decoration. */
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero {padding:62px 0;background:#feeffb}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-layout {display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:clamp(36px,5vw,76px)}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero .shop-breadcrumb {margin-bottom:26px}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero h1 {position:static!important;width:auto!important;height:auto!important;max-width:12ch;margin:0!important;padding:0!important;overflow:visible!important;clip:auto!important;white-space:normal!important;border:0!important;color:#272727!important;font:600 clamp(46px,4.4vw,68px)/1.07 'Sora',sans-serif!important;letter-spacing:-.045em!important;text-wrap:balance}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-copy>p {max-width:46ch;margin:24px 0 0;color:#474047;font:400 clamp(17px,1.35vw,19px)/1.65 'Sora',sans-serif;letter-spacing:0}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-photo {height:clamp(350px,32vw,460px);margin:0;overflow:hidden;border-radius:14px 44px 44px 44px;background:#edf2ec}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-photo img {display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%}
+
+/* Events: bring the community interaction into focus and keep the copy concise. */
+#iym-site.inner-page.events-page .events-hero {grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,72px);min-height:0;padding:clamp(46px,5vw,76px) clamp(34px,5vw,78px);background:#fff6fd}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy {padding:0;max-width:620px}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy::before {margin-bottom:22px}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-lead {max-width:16ch;margin:0;color:#272727;font:600 clamp(34px,3.3vw,53px)/1.14 'Sora',sans-serif;letter-spacing:-.045em;text-wrap:balance}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-support {max-width:42ch;margin:24px 0 30px;color:#565056;font:400 clamp(16px,1.15vw,19px)/1.65 'Sora',sans-serif;letter-spacing:0;text-wrap:normal}
+#iym-site.inner-page.events-page .events-photo {position:relative;min-width:0;height:clamp(390px,34vw,510px);margin:0;padding:0;overflow:hidden;border-radius:14px 44px 44px 44px;background:#edf2ec}
+#iym-site.inner-page.events-page .events-photo img {width:100%;height:100%;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:center 43%;border-radius:0}
+#iym-site.inner-page.events-page .events-photo figcaption {position:absolute;right:0;bottom:0;left:0;margin:0;padding:28px 22px 17px;background:linear-gradient(transparent,rgba(20,25,22,.78));color:#fff;font:600 14px/1.4 'Assistant',sans-serif}
+@media(max-width:900px) {
+  #iym-site.inner-page.events-page .events-hero {grid-template-columns:1fr;gap:30px;padding:52px 34px}
+  #iym-site.inner-page.events-page .events-hero .interior-hero-copy {max-width:720px}
+  #iym-site.inner-page.events-page .events-photo {height:clamp(350px,50vw,480px)}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page.events-page .events-hero {gap:28px;padding:43px 23px 46px}
+  #iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-lead {font-size:clamp(33px,8.5vw,44px)}
+  #iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-support {margin:18px 0 24px}
+  #iym-site.inner-page.events-page .events-photo {height:350px;border-radius:12px 30px 30px 30px}
+}
+
+/* Keep the supplied photographs composed inside their editorial sections. */
+#iym-site.inner-page.about-page .about-mission {gap:clamp(36px,5vw,76px)}
+#iym-site.inner-page.about-page .about-mission .section-photo img {object-position:center 48%}
+#iym-site.inner-page.appointments-page .preparation .split-story {grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(40px,6vw,92px)}
+#iym-site.inner-page.appointments-page .preparation .section-photo {margin:32px 0 0;overflow:hidden;border-radius:12px 40px 40px 40px;aspect-ratio:4/3}
+#iym-site.inner-page.appointments-page .preparation .section-photo img {display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center 54%;border-radius:0}
+#iym-site.inner-page.appointments-page .preparation .prose>p {max-width:44ch}
+#iym-site.inner-page.contact-page .contact-hero .section-photo {max-width:100%;margin:36px 0 0;overflow:hidden;border-radius:12px 36px 36px 36px;aspect-ratio:4/3}
+#iym-site.inner-page.contact-page .contact-hero .section-photo img {display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center 52%;border-radius:0}
+@media(max-width:900px) {
+  #iym-site.inner-page.appointments-page .preparation .split-story {grid-template-columns:1fr;gap:28px}
+  #iym-site.inner-page.appointments-page .preparation .section-photo {max-width:650px;aspect-ratio:16/10}
+  #iym-site.inner-page.contact-page .contact-hero .section-photo {max-width:650px;aspect-ratio:16/10}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page.appointments-page .preparation .section-photo,#iym-site.inner-page.contact-page .contact-hero .section-photo {aspect-ratio:4/3;border-radius:10px 30px 30px 30px}
+}
+@media(max-width:900px) {
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero {padding:52px 0}
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero-layout {gap:30px}
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero-photo {height:340px}
+}
+@media(max-width:700px) {
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero {padding:44px 0 36px}
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero-layout {grid-template-columns:1fr;gap:30px}
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero h1 {font-size:clamp(40px,9vw,52px)!important}
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero-copy>p {margin-top:18px;font-size:16px}
+  #iym-site.inner-page[data-shop-category="courses"] .courses-hero-photo {height:auto;aspect-ratio:4/3;border-radius:10px 30px 30px 30px}
+}
+
+/* Shared interior hero system — used on every page other than Home. */
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) {
+  position:relative!important;
+  isolation:isolate;
+  display:block!important;
+  min-height:440px;
+  margin:0;
+  padding:0!important;
+  overflow:hidden;
+  background:linear-gradient(118deg,#fffdfd 0%,#fffdfd 54%,#feeffb 100%)!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro)::before {
+  position:absolute;
+  z-index:-2;
+  top:-150px;
+  right:-160px;
+  width:510px;
+  height:510px;
+  content:"";
+  border:1px solid rgba(78,118,97,.25);
+  border-radius:50%;
+  background:rgba(237,242,236,.7);
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro)::after {
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  right:clamp(24px,7vw,140px);
+  width:min(34vw,430px);
+  height:min(31vw,400px);
+  max-height:80%;
+  content:"";
+  transform:translateY(-50%);
+  background:center / contain no-repeat;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) h1 {
+  position:static!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:12ch;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+  clip:auto!important;
+  white-space:normal!important;
+  border:0!important;
+  color:#272727!important;
+  font:600 clamp(44px,4.1vw,66px)/1.08 'Sora',sans-serif!important;
+  letter-spacing:-.055em!important;
+  text-wrap:balance;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner) {
+  position:relative;
+  z-index:1;
+  box-sizing:border-box;
+  width:min(1280px,100% - 96px);
+  max-width:none;
+  min-height:440px;
+  margin:0 auto;
+  padding:clamp(74px,8vw,116px) min(43%,540px) clamp(70px,7vw,104px) 0!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner)>p:not(.path-eyebrow):not(.blog-eyebrow):not(.gallery-eyebrow) {
+  max-width:39ch!important;
+  margin:24px 0 0!important;
+  color:#565056!important;
+  font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;
+  letter-spacing:0!important;
+  text-wrap:pretty;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) :is(.path-eyebrow,.blog-eyebrow,.gallery-eyebrow,.shop-breadcrumb) {
+  margin:0 0 21px!important;
+  color:#4e7661!important;
+  font:700 13px/1.35 'Assistant',sans-serif!important;
+  letter-spacing:.13em!important;
+  text-transform:uppercase;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) .button {margin-top:28px}
+
+/* Page-aware decorative vector illustrations. These are decorative and do not repeat supplied photography. */
+#iym-site.inner-page.about-page .about-hero::after,#iym-site.inner-page.events-page .events-hero::after,#iym-site.inner-page.courses-page .courses-intro::after {background-image:url('assets/hero-art-learning.svg')}
+#iym-site.inner-page.shop-page .shop-hero::after,#iym-site.inner-page[data-shop-category] .shop-category-hero::after {background-image:url('assets/hero-art-shop.svg')}
+#iym-site.inner-page.appointments-page .title-hero::after,#iym-site.inner-page.corporate-page .corporate-hero::after {background-image:url('assets/hero-art-calendar.svg')}
+#iym-site.inner-page.blog-page .blog-hero::after {background-image:url('assets/hero-art-journal.svg')}
+#iym-site.inner-page.gallery-page .gallery-hero::after {background-image:url('assets/hero-art-gallery.svg')}
+
+/* Existing photo treatments become content sections, not competing hero columns. */
+#iym-site.inner-page :is(.about-community-hero,.shop-hero-photo,.events-photo,.courses-hero-photo) {display:none!important}
+
+/* The standard title heroes use the same component and preserve their original CTA content. */
+#iym-site.inner-page :is(.title-hero,.corporate-hero) {
+  position:relative!important;
+  isolation:isolate;
+  display:block!important;
+  min-height:440px;
+  margin:0;
+  padding:0!important;
+  overflow:hidden;
+  background:linear-gradient(118deg,#fffdfd 0%,#fffdfd 54%,#feeffb 100%)!important;
+}
+#iym-site.inner-page :is(.title-hero,.corporate-hero)::before {
+  position:absolute;z-index:-2;top:-150px;right:-160px;width:510px;height:510px;content:"";border:1px solid rgba(78,118,97,.25);border-radius:50%;background:rgba(237,242,236,.7)
+}
+#iym-site.inner-page :is(.title-hero,.corporate-hero)::after {
+  position:absolute;z-index:-1;top:50%;right:clamp(24px,7vw,140px);width:min(34vw,430px);height:min(31vw,400px);max-height:80%;content:"";transform:translateY(-50%);background:center / contain no-repeat
+}
+#iym-site.inner-page :is(.title-hero,.corporate-hero)>.container {
+  position:relative;z-index:1;box-sizing:border-box;width:min(1280px,100% - 96px)!important;min-height:440px;margin:0 auto;padding:clamp(74px,8vw,116px) min(43%,540px) clamp(70px,7vw,104px) 0!important
+}
+#iym-site.inner-page :is(.title-hero,.corporate-hero) h1 {position:static!important;width:auto!important;height:auto!important;max-width:13ch;margin:0!important;padding:0!important;overflow:visible!important;clip:auto!important;white-space:normal!important;border:0!important;color:#272727!important;font:600 clamp(44px,4.1vw,66px)/1.08 'Sora',sans-serif!important;letter-spacing:-.055em!important;text-wrap:balance}
+#iym-site.inner-page :is(.title-hero,.corporate-hero) .hero-bottom {display:block!important;margin:24px 0 0!important}
+#iym-site.inner-page :is(.title-hero,.corporate-hero) .hero-bottom>p {max-width:39ch!important;margin:0!important;color:#565056!important;font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;letter-spacing:0!important}
+#iym-site.inner-page :is(.title-hero,.corporate-hero) .button {margin-top:28px}
+
+/* The contact page preserves the working form while receiving the same light illustration field. */
+#iym-site.inner-page.contact-page .contact-hero {position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(118deg,#fffdfd 0%,#fffdfd 46%,#feeffb 100%)!important}
+#iym-site.inner-page.contact-page .contact-hero::after {position:absolute;z-index:-1;top:70px;right:clamp(20px,5vw,90px);width:min(27vw,340px);height:300px;content:"";opacity:.42;background:url('assets/hero-art-community.svg') center / contain no-repeat}
+#iym-site.inner-page.contact-page .contact-hero .section-photo {display:none!important}
+#iym-site.inner-page.contact-page .contact-hero h1 {position:static!important;width:auto!important;height:auto!important;max-width:13ch;margin:0!important;padding:0!important;overflow:visible!important;clip:auto!important;white-space:normal!important;border:0!important;color:#272727!important;font:600 clamp(44px,4.1vw,66px)/1.08 'Sora',sans-serif!important;letter-spacing:-.055em!important;text-wrap:balance}
+
+/* The course landing page previously retained its own two-column photo grid. Collapse it into the shared illustrated hero. */
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-layout {display:block!important;grid-template-columns:none!important;gap:0!important}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-copy {max-width:none!important;padding:0!important}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-copy>p {max-width:39ch!important;margin:24px 0 0!important;color:#565056!important;font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;letter-spacing:0!important}
+
+/* Reset the former Events-only photo grid so its copy cannot collapse into a narrow centered column. */
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy {box-sizing:border-box!important;width:min(1280px,calc(100% - 96px))!important;max-width:none!important;min-height:440px!important;margin:0 auto!important;padding:clamp(74px,8vw,116px) min(43%,540px) clamp(70px,7vw,104px) 0!important}
+#iym-site.inner-page.events-page .events-hero h1 {max-width:17ch!important}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-lead {max-width:39ch!important;margin:24px 0 0!important;color:#565056!important;font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;letter-spacing:0!important;text-wrap:pretty}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-support {max-width:39ch!important;margin:6px 0 0!important;color:#565056!important;font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;letter-spacing:0!important}
+@media(max-width:900px) {#iym-site.inner-page.events-page .events-hero .interior-hero-copy {width:min(100% - 68px,1280px)!important;min-height:390px!important;padding-right:45%!important}}
+@media(max-width:640px) {#iym-site.inner-page.events-page .events-hero .interior-hero-copy {width:calc(100% - 46px)!important;min-height:0!important;padding:62px 0 54px!important}}
+
+@media(max-width:900px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero),
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner) {min-height:390px}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner) {width:min(100% - 68px,1280px);padding-right:45%!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::after {right:18px;width:38vw;height:34vw}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero),
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner) {min-height:0}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner) {width:calc(100% - 46px)!important;padding:62px 0 54px!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) h1 {max-width:11ch;font-size:clamp(39px,10vw,52px)!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::before {top:auto;right:-165px;bottom:-225px;width:390px;height:390px}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::after {top:auto;right:-18px;bottom:-64px;width:220px;height:220px;opacity:.28;transform:none}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner)>p:not(.path-eyebrow):not(.blog-eyebrow):not(.gallery-eyebrow),#iym-site.inner-page :is(.title-hero,.corporate-hero) .hero-bottom>p {font-size:17px!important}
+  #iym-site.inner-page.contact-page .contact-hero::after {display:none}
+}
+
+/* ========================================================================== 
+   Interior hero final pass
+   Every non-home route shares this calm, editorial introduction. The icon art
+   is purpose-made per route, so the pages feel related without repeating a
+   photograph or a generic decoration. Keep these rules last: older page CSS
+   remains below the design system only for non-hero content.
+   ========================================================================== */
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) {
+  position:relative!important;
+  isolation:isolate;
+  overflow:hidden!important;
+  min-height:500px!important;
+  display:flex!important;
+  align-items:stretch!important;
+  background:
+    radial-gradient(circle at 84% 23%,rgba(254,207,246,.62) 0 10%,transparent 10.15%),
+    linear-gradient(116deg,#fffdfd 0%,#fffdfd 48%,#feeffb 100%)!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::before {
+  content:""!important;
+  position:absolute!important;
+  z-index:-2!important;
+  top:-160px!important;
+  right:-110px!important;
+  width:510px!important;
+  height:510px!important;
+  border:1px solid rgba(78,118,97,.24)!important;
+  border-radius:50%!important;
+  background:rgba(237,242,236,.58)!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::after {
+  content:""!important;
+  position:absolute!important;
+  z-index:-1!important;
+  top:50%!important;
+  right:clamp(28px,7vw,150px)!important;
+  width:min(35vw,448px)!important;
+  height:min(32vw,414px)!important;
+  transform:translateY(-43%)!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:contain!important;
+  opacity:1!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout) {
+  position:relative!important;
+  z-index:1!important;
+  width:min(100% - 96px,1280px)!important;
+  min-height:500px!important;
+  margin-inline:auto!important;
+  padding:clamp(82px,9vw,132px) min(44%,560px) clamp(76px,8vw,112px) 0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.path-eyebrow,.blog-eyebrow,.gallery-eyebrow,.hero-eyebrow,.shop-breadcrumb) {
+  margin:0 0 23px!important;
+  color:#4e7661!important;
+  font:700 13px/1.25 'Assistant',sans-serif!important;
+  letter-spacing:.14em!important;
+  text-transform:uppercase!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) h1 {
+  position:static!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:12ch!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+  clip:auto!important;
+  white-space:normal!important;
+  border:0!important;
+  color:#272727!important;
+  font:600 clamp(46px,4.35vw,68px)/1.06 'Sora',sans-serif!important;
+  letter-spacing:-.052em!important;
+  text-wrap:balance!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout)>p:not(.path-eyebrow):not(.blog-eyebrow):not(.gallery-eyebrow) {
+  max-width:40ch!important;
+  margin:24px 0 0!important;
+  color:#565056!important;
+  font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;
+  letter-spacing:0!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.button,.hero-button,.gallery-cta) {margin-top:30px!important}
+
+/* A unique illustration for every principal route and collection. */
+#iym-site.inner-page.about-page .about-hero::after {background-image:url('assets/hero-art-about.svg')!important}
+#iym-site.inner-page.events-page .events-hero::after {background-image:url('assets/hero-art-events.svg')!important}
+#iym-site.inner-page.courses-page .courses-intro::after {background-image:url('assets/hero-art-learning.svg')!important}
+#iym-site.inner-page.shop-page .shop-hero::after {background-image:url('assets/hero-art-shop.svg')!important}
+#iym-site.inner-page.appointments-page .title-hero::after {background-image:url('assets/hero-art-calendar.svg')!important}
+#iym-site.inner-page.corporate-page .corporate-hero::after {background-image:url('assets/hero-art-corporate.svg')!important}
+#iym-site.inner-page.blog-page .blog-hero::after {background-image:url('assets/hero-art-journal.svg')!important}
+#iym-site.inner-page.gallery-page .gallery-hero::after {background-image:url('assets/hero-art-gallery.svg')!important}
+#iym-site.inner-page.contact-page .contact-hero::after {background-image:url('assets/hero-art-contact.svg')!important}
+#iym-site.inner-page[data-shop-category="bundles"] .shop-category-hero::after {background-image:url('assets/hero-art-bundles.svg')!important}
+#iym-site.inner-page[data-shop-category="elementary"] .shop-category-hero::after {background-image:url('assets/hero-art-elementary.svg')!important}
+#iym-site.inner-page[data-shop-category="middle"] .shop-category-hero::after {background-image:url('assets/hero-art-middle.svg')!important}
+#iym-site.inner-page[data-shop-category="high"] .shop-category-hero::after {background-image:url('assets/hero-art-high.svg')!important}
+#iym-site.inner-page[data-shop-category="courses"] .shop-category-hero::after {background-image:url('assets/hero-art-course-card.svg')!important}
+#iym-site.inner-page[data-shop-category="apparel"] .shop-category-hero::after {background-image:url('assets/hero-art-apparel.svg')!important}
+#iym-site.inner-page[data-shop-category="hoodies"] .shop-category-hero::after {background-image:url('assets/hero-art-hoodie.svg')!important}
+#iym-site.inner-page[data-shop-category="tshirts"] .shop-category-hero::after {background-image:url('assets/hero-art-tshirt.svg')!important}
+#iym-site.inner-page[data-shop-category="kidsclothing"] .shop-category-hero::after {background-image:url('assets/hero-art-kidswear.svg')!important}
+#iym-site.inner-page[data-shop-category="accessories"] .shop-category-hero::after {background-image:url('assets/hero-art-accessories.svg')!important}
+#iym-site.inner-page[data-shop-category="bags"] .shop-category-hero::after {background-image:url('assets/hero-art-bag.svg')!important}
+#iym-site.inner-page[data-shop-category="keyrings"] .shop-category-hero::after {background-image:url('assets/hero-art-keyring.svg')!important}
+#iym-site.inner-page[data-shop-category="mugs"] .shop-category-hero::after {background-image:url('assets/hero-art-mug.svg')!important}
+#iym-site.inner-page[data-shop-category="journals"] .shop-category-hero::after {background-image:url('assets/hero-art-journal.svg')!important}
+
+/* The special courses collection uses the same framework rather than a photo split. */
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-layout {display:flex!important;grid-template-columns:none!important;gap:0!important}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-photo {display:none!important}
+#iym-site.inner-page[data-shop-category="courses"] .courses-hero-copy {max-width:none!important;padding:0!important}
+
+/* Keep the contact form usable while it adopts the same pale gradient canvas. */
+#iym-site.inner-page.contact-page .contact-hero {min-height:560px!important;background:linear-gradient(116deg,#fffdfd 0%,#fffdfd 48%,#feeffb 100%)!important}
+#iym-site.inner-page.contact-page .contact-hero::before {background:rgba(237,242,236,.58)!important}
+
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-lead {max-width:39ch!important;margin:24px 0 0!important;color:#565056!important;font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;letter-spacing:0!important}
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>.events-support {max-width:39ch!important;margin:6px 0 0!important;color:#565056!important;font:400 clamp(17px,1.35vw,20px)/1.65 'Sora',sans-serif!important;letter-spacing:0!important}
+
+@media(max-width:900px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero),
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout) {min-height:410px!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout) {width:min(100% - 68px,1280px)!important;padding-right:44%!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::after {right:18px!important;width:38vw!important;height:35vw!important}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero),
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout) {min-height:0!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout) {width:calc(100% - 46px)!important;padding:64px 0 58px!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) h1 {max-width:11ch!important;font-size:clamp(40px,10vw,53px)!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::before {top:auto!important;right:-165px!important;bottom:-225px!important;width:390px!important;height:390px!important}
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero)::after {top:auto!important;right:-18px!important;bottom:-64px!important;width:220px!important;height:220px!important;transform:none!important;opacity:.3!important}
+  #iym-site.inner-page.contact-page .contact-hero::after {display:none!important}
+}
+
+/* Photo-led interior heroes -------------------------------------------------
+   The homepage remains the only rotating scene. Interior routes use one real
+   IYM image each, with the same measured background zoom for a calmer, more
+   editorial motion treatment. */
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero) {
+  --interior-photo:url('assets/real-hero-community.webp');
+  background-image:
+    linear-gradient(90deg,rgba(24,22,22,.86) 0%,rgba(28,24,24,.76) 43%,rgba(65,37,45,.45) 72%,rgba(45,28,27,.34) 100%),
+    var(--interior-photo)!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-size:cover,100% auto!important;
+  animation:iym-interior-photo-zoom 18s ease-in-out infinite alternate!important;
+}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero)::before,
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero)::after {display:none!important}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero) h1 {color:#fffdfd!important}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.path-eyebrow,.blog-eyebrow,.gallery-eyebrow,.hero-eyebrow,.shop-breadcrumb),
+#iym-site.inner-page.contact-page .contact-copy::before {color:#fecff6!important}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero) :is(.interior-hero-copy,.container,.blog-hero-inner,.gallery-hero-inner,.courses-hero-layout)>p:not(.path-eyebrow):not(.blog-eyebrow):not(.gallery-eyebrow),
+#iym-site.inner-page.events-page .events-hero .interior-hero-copy>:is(.events-lead,.events-support),
+#iym-site.inner-page.contact-page .contact-copy>p:first-of-type {color:#fffdfd!important}
+#iym-site.inner-page.contact-page .contact-details :is(dt,dd,a),
+#iym-site.inner-page.contact-page .contact-copy .contact-aside {color:#fffdfd!important}
+#iym-site.inner-page.contact-page .contact-copy .text-link {color:#fecff6!important}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero) :is(.button,.hero-button,.gallery-cta) {background:#fecff6!important;color:#272727!important}
+#iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero) :is(.button,.hero-button,.gallery-cta) img {filter:none!important}
+
+@keyframes iym-interior-photo-zoom {from {background-size:cover,100% auto} to {background-size:cover,108% auto}}
+@media (prefers-reduced-motion:reduce) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero) {animation:none!important}
+}
+@media(max-width:640px) {
+  #iym-site.inner-page :is(.interior-hero,.blog-hero,.shop-category-hero,.gallery-hero,.courses-intro,.title-hero,.corporate-hero,.contact-hero) {background-size:cover,auto 100%!important}
+  @keyframes iym-interior-photo-zoom {from {background-size:cover,auto 100%} to {background-size:cover,auto 106%}}
+}
+
+/* One route, one photograph. These are supplied IYM photos—not stock or AI. */
+#iym-site.inner-page.about-page .about-hero {--interior-photo:url('assets/about-learning-in-action.jpg')}
+#iym-site.inner-page.events-page .events-hero {--interior-photo:url('assets/events-community-outreach.webp')}
+#iym-site.inner-page.courses-page .courses-intro {--interior-photo:url('assets/courses-learning.jpg')}
+#iym-site.inner-page.shop-page .shop-hero {--interior-photo:url('assets/real-shop-display.webp')}
+#iym-site.inner-page.appointments-page .title-hero {--interior-photo:url('assets/real-hero-conversation.webp')}
+#iym-site.inner-page.corporate-page .corporate-hero {--interior-photo:url('assets/real-corporate-partnership.webp')}
+#iym-site.inner-page.blog-page .blog-hero {--interior-photo:url('assets/blog-real-01.webp')}
+#iym-site.inner-page.gallery-page .gallery-hero {--interior-photo:url('assets/gallery-01.webp')}
+#iym-site.inner-page.contact-page .contact-hero {--interior-photo:url('assets/real-community-conversation.webp')}
+#iym-site.inner-page.contact-page .contact-hero {
+  background-image:
+    linear-gradient(90deg,rgba(24,22,22,.86) 0%,rgba(28,24,24,.76) 43%,rgba(65,37,45,.45) 72%,rgba(45,28,27,.34) 100%),
+    var(--interior-photo)!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-size:cover,100% auto!important;
+  animation:iym-interior-photo-zoom 18s ease-in-out infinite alternate!important;
+}
+#iym-site.inner-page.contact-page .contact-hero h1 {color:#fffdfd!important}
+#iym-site.inner-page[data-shop-category="bundles"] .shop-category-hero {--interior-photo:url('assets/hero-real-01.webp')}
+#iym-site.inner-page[data-shop-category="elementary"] .shop-category-hero {--interior-photo:url('assets/hero-real-03.webp')}
+#iym-site.inner-page[data-shop-category="middle"] .shop-category-hero {--interior-photo:url('assets/hero-real-04.webp')}
+#iym-site.inner-page[data-shop-category="high"] .shop-category-hero {--interior-photo:url('assets/hero-real-05.webp')}
+#iym-site.inner-page[data-shop-category="courses"] .shop-category-hero {--interior-photo:url('assets/hero-real-06.webp')}
+#iym-site.inner-page[data-shop-category="apparel"] .shop-category-hero {--interior-photo:url('assets/hero-real-07.webp')}
+#iym-site.inner-page[data-shop-category="hoodies"] .shop-category-hero {--interior-photo:url('assets/hero-real-09.webp')}
+#iym-site.inner-page[data-shop-category="tshirts"] .shop-category-hero {--interior-photo:url('assets/hero-real-10.webp')}
+#iym-site.inner-page[data-shop-category="kidsclothing"] .shop-category-hero {--interior-photo:url('assets/hero-real-11.webp')}
+#iym-site.inner-page[data-shop-category="accessories"] .shop-category-hero {--interior-photo:url('assets/hero-real-12.webp')}
+#iym-site.inner-page[data-shop-category="bags"] .shop-category-hero {--interior-photo:url('assets/hero-real-13.webp')}
+#iym-site.inner-page[data-shop-category="keyrings"] .shop-category-hero {--interior-photo:url('assets/hero-real-14.webp')}
+#iym-site.inner-page[data-shop-category="mugs"] .shop-category-hero {--interior-photo:url('assets/hero-real-15.webp')}
+#iym-site.inner-page[data-shop-category="journals"] .shop-category-hero {--interior-photo:url('assets/hero-real-16.webp')}

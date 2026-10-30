@@ -1,0 +1,28 @@
+#iym-site.gallery-page .gallery-hero{background:#feeffb;padding:clamp(64px,7vw,100px) 0;border-radius:0}
+#iym-site.gallery-page .gallery-hero-inner{display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:clamp(24px,7vw,110px)}
+#iym-site.gallery-page .gallery-eyebrow{font:700 13px/1.4 Assistant,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#4e7661;margin:0 0 16px}
+#iym-site.gallery-page .gallery-hero h1{font:600 clamp(48px,6vw,86px)/1.05 Sora,sans-serif;letter-spacing:-.055em;color:#272727;margin:0}
+#iym-site.gallery-page .gallery-hero-inner>p{font:400 clamp(17px,1.5vw,21px)/1.6 Sora,sans-serif;color:#565056;max-width:510px;margin:0}
+#iym-site.gallery-page .gallery-section{padding-top:clamp(60px,6vw,92px);padding-bottom:clamp(72px,8vw,118px)}
+#iym-site.gallery-page .gallery-intro{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:38px}
+#iym-site.gallery-page .gallery-intro h2,#iym-site.gallery-page .gallery-cta h2{font:600 clamp(32px,4vw,54px)/1.1 Sora,sans-serif;letter-spacing:-.045em;max-width:620px;margin:0}
+#iym-site.gallery-page .gallery-intro>p{font:400 17px/1.6 Sora,sans-serif;color:#565056;max-width:330px;margin:0}
+#iym-site.gallery-page .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 20px}
+#iym-site.gallery-page .gallery-card{margin:0;min-width:0}
+#iym-site.gallery-page .gallery-image-button{display:block;border:0;background:#edf2ec;padding:0;width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:10px 28px 28px 28px;cursor:zoom-in}
+#iym-site.gallery-page .gallery-image-button img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 60%;transition:transform .25s ease}
+#iym-site.gallery-page .gallery-image-button:hover img{transform:scale(1.035)}
+#iym-site.gallery-page .gallery-card figcaption{font:600 15px/1.4 Assistant,sans-serif;color:#565056;margin-top:10px}
+#iym-site.gallery-page .gallery-cta{background:#edf2ec;border-radius:46px;padding:clamp(55px,7vw,100px) 0}
+#iym-site.gallery-page .gallery-cta>.container{display:flex;justify-content:space-between;align-items:end;gap:30px}
+#iym-site.gallery-page .gallery-dialog{border:0;background:#1c1c1c;color:#fff;padding:18px;max-width:min(1100px,95vw);max-height:94vh;border-radius:16px}
+#iym-site.gallery-page .gallery-dialog::backdrop{background:rgba(15,15,15,.84)}
+#iym-site.gallery-page .gallery-dialog-inner{display:grid;justify-items:center;gap:10px}
+#iym-site.gallery-page .gallery-dialog-close{justify-self:end;min-height:44px;border:1px solid #ddd;border-radius:999px;background:#fff;color:#272727;font:700 15px Assistant,sans-serif;padding:8px 18px;cursor:pointer}
+#iym-site.gallery-page .gallery-dialog-close span{font-size:24px;vertical-align:middle;margin-left:10px}
+#iym-site.gallery-page .gallery-dialog img{display:block;max-width:100%;max-height:calc(94vh - 125px);object-fit:contain;border-radius:6px}
+#iym-site.gallery-page .gallery-dialog-caption{font:600 15px Assistant,sans-serif;margin:0}
+#iym-site.gallery-page .gallery-image-button:focus-visible,#iym-site.gallery-page .gallery-dialog-close:focus-visible{outline:3px solid #4e7661;outline-offset:5px}
+@media(max-width:900px){#iym-site.gallery-page .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#iym-site.gallery-page .gallery-hero-inner{grid-template-columns:1fr}#iym-site.gallery-page .gallery-intro,#iym-site.gallery-page .gallery-cta>.container{align-items:start;flex-direction:column}}
+@media(max-width:640px){#iym-site.gallery-page .gallery-hero{padding:72px 0 76px;border-radius:0}#iym-site.gallery-page .gallery-grid{grid-template-columns:1fr;gap:28px}#iym-site.gallery-page .gallery-card:nth-child(n) .gallery-image-button{aspect-ratio:4/3;border-radius:10px 30px 30px 30px}#iym-site.gallery-page .gallery-cta{border-radius:30px}#iym-site.gallery-page .gallery-hero h1{font-size:clamp(46px,12vw,64px)}}
+@media(prefers-reduced-motion:reduce){#iym-site.gallery-page .gallery-image-button img{transition:none}#iym-site.gallery-page .gallery-image-button:hover img{transform:none}}
